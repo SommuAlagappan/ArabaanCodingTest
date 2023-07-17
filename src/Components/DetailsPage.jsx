@@ -46,25 +46,31 @@ function DetailsPage() {
       <div className="row">
         <div className="col-12">
           <div className="row">
-            <p className="h1 fw-bold mt-4 mt-lg-5">Details of Post</p>
+            <p className="h1 fw-bold mt-4 mt-lg-5 text-white">
+              Details of the Post:
+            </p>
             {data.map((item) => {
               return (
-                <div class="col-12 mb-2">
-                  <div class="card">
-                    <div class="card-body">
+                <div className="col-12 mb-2">
+                  <div className="card">
+                    <div className="card card-body bg-black">
                       <div>
-                        <span className="h1 ">Title: </span>
-                        <span className="lead fw-bold fs-4">{item.title}</span>
+                        <span className="h1 text-white">Title: </span>
+                        <span className="lead fw-bold fs-4 text-white">
+                          {item.title}
+                        </span>
                       </div>
                       <br />
                       <div>
-                        <span className="h1  ">Body: </span>
-                        <span className="lead fw-bold fs-4">{item.body}</span>
+                        <span className="h1 text-white ">Body: </span>
+                        <span className="lead fw-bold fs-4 text-white">
+                          {item.body}
+                        </span>
                       </div>
                       <div className="mt-3">
                         <button
                           onClick={() => postDelete(item.id)}
-                          className="btn btn-outline-danger btn-sm"
+                          className="btn btn-danger "
                         >
                           <i className="fa-solid fa-trash me-1"></i>
                           Delete

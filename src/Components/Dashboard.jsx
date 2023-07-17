@@ -23,36 +23,55 @@ function Dashboard() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <span className="navbar-brand">
             <span className="display-5">Hello Arbaan!</span>
           </span>
         </div>
       </nav>
+      <div className="bg-black">
+        <div className="container ">
+          <div className="row">
+            <div className="col-lg-12  ">
+              <div className="row mb-5">
+                <p className="display-5 fw-bold text-center mt-4 text-white ">
+                  Product Users{" "}
+                </p>
 
-      <div className="container ">
-        <div className="row">
-          <div className="col-lg-8  ">
-            <p className="display-6 fw-bold container mt-4 text-dark">
-              Product Users{" "}
-            </p>
+                {data.map((item) => {
+                  return (
+                    <>
+                      <div className="col-lg-3 d-flex justify-content-center g-5">
+                        <div
+                          className="card bg-black border-white d-flex justify-content-center align-items-center cards"
+                          style={{ width: "17rem" }}
+                        >
+                          <img
+                            src="https://www.nailseatowncouncil.gov.uk/wp-content/uploads/blank-profile-picture-973460_1280.jpg"
+                            className="card-img rounded-circle mt-4"
+                            alt="profile_id"
+                            style={{ height: "150px", width: "150px" }}
+                          />
+                          <div className="card card-body  bg-black">
+                            <h5 className="card-title text-white text-center">
+                              {item.name}
+                            </h5>
 
-            {data.map((item) => {
-              return (
-                <>
-                  <div className="list-group">
-                    <Link
-                      to={`/user/${item.id}`}
-                      className="list-group-item list-group-item-action  "
-                    >
-                      <b className="lead fw-bold fst-italic   ">{item.id}. </b>
-                      <b className="lead fw-bolder fst-italic ">{item.name}</b>
-                    </Link>
-                  </div>
-                </>
-              );
-            })}
+                            <Link
+                              to={`/user/${item.id}`}
+                              className="btn btn-success"
+                            >
+                              View Dashboard
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>

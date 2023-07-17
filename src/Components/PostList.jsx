@@ -27,19 +27,22 @@ const PostList = () => {
       <div className="row">
         <div className="col-12">
           <div className="row">
-            <p className="h1 fw-bold mt-4 mt-lg-5 ">List of Posts </p>
+            <p className="h1 fw-bold mt-4 mt-lg-5 text-white ">
+              List of Posts{" "}
+            </p>
 
             {data.map((item) => {
               return (
-                <div class="col-12 mb-2">
-                  <div class="card">
-                    <div class="card-body ">
-                      <p className="h5">{item.title}</p>
+                <div className="col-12 mb-2">
+                  <div className="card ">
+                    <div className="card-body bg-black border border-0 rounded">
+                      <h4 className="card-title text-white">{item.title}</h4>
                       <Link
                         to={`/post/${item.id}`}
-                        className="btn btn-outline-success btn-sm "
+                        className="btn btn-info text-center "
                       >
-                        <i className="fa-solid fa-eye me-1"></i>View
+                        <i className="fa-solid fa-eye me-1"></i>
+                        See Post
                       </Link>
                     </div>
                   </div>

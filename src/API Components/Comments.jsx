@@ -28,7 +28,7 @@ function Comments() {
           <div className=" w-50">
             <div className="row">
               <div className="col-10 my-2">
-                <strong className="fs-5">No.of.Comments</strong>
+                <strong className="fs-5 text-white">No.of.Comments</strong>
                 <div className="mt-1">
                   <div className="progress" style={{ height: "40px" }}>
                     <div

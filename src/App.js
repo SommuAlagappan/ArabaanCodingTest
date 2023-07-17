@@ -4,6 +4,7 @@ import Portal1 from "./Portals/Portal1";
 import Portal2 from "./Portals/Portal2";
 import Dashboard from "./Components/Dashboard";
 import { ToastContainer } from "react-toastify";
+import './App.css';
 
 
 function App() {

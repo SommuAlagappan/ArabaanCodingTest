@@ -26,11 +26,11 @@ function Users() {
       <div className="row">
         <div className="col-lg-12 mt-4">
           <div className="row g-4">
-            <div class="d-md-flex justify-content-center">
-              <span class="display-5 text-md-start text-center fst-italic">
-                Hey Welcome,
-                <br class="d-md-none" />
-                <span className="display-3 fst-normal fw-bold">
+            <div className="d-md-flex justify-content-center">
+              <span className="display-5 text-md-start text-white text-center fst-italic">
+                Hey Welcome,&nbsp;
+                <br className="d-md-none" />
+                <span className="display-3 fst-normal fw-bold text-white">
                   {user.name}
                 </span>
               </span>
