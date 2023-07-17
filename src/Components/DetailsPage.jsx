@@ -56,6 +56,7 @@ function DetailsPage() {
                         <span className="h1 ">Title: </span>
                         <span className="lead fw-bold fs-4">{item.title}</span>
                       </div>
+                      <br />
                       <div>
                         <span className="h1  ">Body: </span>
                         <span className="lead fw-bold fs-4">{item.body}</span>
