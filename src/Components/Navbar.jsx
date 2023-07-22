@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <span className="navbar-brand">
-          <span className="display-5">Hello Arbaan!</span>
+          <span className="display-5">Hello React!</span>
         </span>
         <button
           className="navbar-toggler"
